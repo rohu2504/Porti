@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+
+        .active {
+            background-color: orange;
+        }
+
+        .tab {
+            background-color: rgb(120, 120, 231);
+            margin-left: 550px;
+            margin-top: 60px;
+            width: 450px;
+            height: 450px;
+        }
+
+        .but1 {
+            width: 70px;margin-left: 15px;
+        }
+
+        .but2 {
+            width: 70px;
+           
+        }
+
+        body {
+            background-image: url('conta.avif');
+        }
+        table{
+            background-image: url('conta.avif');
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="ach.html">Acheivements</a></li>
+        <li><a href="cer.html">Certificates</a></li>
+        <li style="float:right"><a href="cont.html">Contact</a></li>
+    </ul>
+    <form method="get">
+        <table border="2" class="tab">
+            <tr>
+                <td><center>Name</center></td>
+                <td><input type="text" placeholder="Enter name"></td>
+
+            </tr>
+            <tr>
+                <td><center>Age</center></td>
+                <td><input type="number" placeholder="Enter age"></td>
+            </tr>
+            <tr>
+                <td><center>Gender</center></td>
+                <td><input type=radio name="b"><label>Male</label>
+                    <input type=radio name="b"><label>Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><center>Mail</center></td>
+                <td><input type="email" placeholder="enter mail"></td>
+            </tr>
+
+            <tr>
+                <td><center>Phone Number</center></td>
+                <td><input type="number" placeholder="enter phone number"></td>
+            </tr>
+            <tr>
+                <td><center><button class="but1">SUBMIT</button></center></td>
+                <td><center><button class="but2">clear</button></center></td>
+            </tr>
+
+        </table>
+        <div style="
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 350px 350px 350px 350px;
+            margin-left: 100px;">
+            <div class="grid-item">
+                <img src="ph.png" height="80">
+            </div>
+            <div class="grid-item">
+                <a href="https://mail.google.com/mail/u/0/#inbox"><img src="gmail.png" height="80"></a>
+            </div>
+            <div class="grid-item">
+                <a href="https://github.com/"><img src="git.png" height="80">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="https://www.linkedin.com/feed/"><img src="lin.webp" height="80"></a>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>
